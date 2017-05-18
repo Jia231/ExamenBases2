@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Examen_Bases2</Name>
+    <ProjectGuid>aa2ef610-429d-4b6a-881f-57ed51e71612</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>Examen_Bases2</AssemblyName>
+    <SpecificPageValue>Public/View/Index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Public\" />
+    <Folder Include="Public\JS\" />
+    <Folder Include="Public\Controller\" />
+    <Folder Include="Public\Model\" />
+    <Folder Include="Public\CSS\" />
+    <Folder Include="Public\View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Public\Controller\AgregarUsuarioController.php" />
+    <Compile Include="Public\Controller\AgregarEmpleadoController.php" />
+    <Compile Include="Public\Controller\MostrarUsuarioController.php" />
+    <Compile Include="Public\Controller\MostrarEmpleadoController.php" />
+    <Compile Include="Public\Controller\ValidarUsuario.php" />
+    <Compile Include="Public\Model\ConnectionControl.php" />
+    <Compile Include="Public\Model\EmployeeDB.php" />
+    <Compile Include="Public\Model\Employee_Model.php" />
+    <Compile Include="Public\Model\Partial_User.php" />
+    <Compile Include="Public\Model\User_Model.php" />
+    <Compile Include="Public\Model\UsuarioDB.php" />
+    <Compile Include="Public\View\Add_Employee.php" />
+    <Compile Include="Public\View\Add_User.php" />
+    <Compile Include="Public\View\Index.php" />
+    <Compile Include="Public\View\Login.php" />
+    <Compile Include="Public\View\MainMenu.php" />
+    <Compile Include="Public\View\Show_Users.php" />
+    <Compile Include="Public\View\Show_Employee.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Public\CSS\Style.css" />
+    <Content Include="Public\JS\app.js" />
+    <Content Include="Public\JS\config.js" />
+    <Content Include="Public\JS\Employee_Directive.js" />
+    <Content Include="Public\JS\LoginController.js" />
+  </ItemGroup>
+</Project>
